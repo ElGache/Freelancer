@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylepp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@700&display=swap" rel="stylesheet">
+    <title>Presupuestos</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Luca Alexandre <span>Freelancer</span></h1>
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="formulario">Contacto</a>
+            <a href="presupuesto.html">Presupuestos</a>
+        </nav>
+        <section class="hero">
+            <div class="contenido-hero">
+                <h1>Diseño y Desarrollo Web</h1>
+                <h2>Freelancer</h2>
+                <div class="posicion">
+                    <h4><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                    </svg><sup>IES Ana Luisa Benítez -Las Pamas de GC</sup></h4>
+                </div>
+                <a href="#" class="boton">Contactar</a>
+            </div>
+        </section>
+    </div>
+    <main class="contenedor sombra">
+            <h2>Presupuestos</h2>
+            <form id="formulario" class="formulario">
+                <legend>Ingresa tu información</legend>
+                <fieldset> <!--Esto es la caja-->
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Empresa</label>
+                            <input class="input-text" type="text" placeholder="Tu Empresa">
+                            <label>Tipología</label>
+                            <form> 
+                                <label for="html">FrontEnd</label>
+                                <input type="radio" id="FrontEnd" name="FrontEnd" value="FrontEnd">
+                                <label for="css">BackEnd</label>
+                                <input type="radio" id="BackEnd" name="BackEnd" value="BackEnd">     
+                            </form>     
+                            <label>¿Desea imagen corporativa?</label>
+                            <form> 
+                                <input type="radio" id="SI" name="SI" value="SI">
+                                <label for="SI">SI</label><br>
+                                <input type="radio" id="NO" name="NO" value="NO">
+                                <label for="NO">NO</label><br>
+                            </form>                          
+                            <div class="campo">
+                                <label>Mensaje</label>
+                                <textarea class="input-text"></textarea>
+                            </div>
+                    </div>
+                    <div>
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+    </main>
+    <footer class="footer">
+        <p>IES ANA LUISA BENITEZ</p>
+    </footer>
+</body>
+</html>
