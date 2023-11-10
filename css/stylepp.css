@@ -158,11 +158,23 @@ body {
 } /*le da margen abajo entre la información y el boton de enviar*/
 
 .campo label {
+    margin-top: 3rem;
     color: var(--blanco);
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
 }/*coloca y da estilo a los label que son los titulos en plan: empresa, tipologia, html . . .*/
+
+.campo form{
+    
+}
+
+.input-text {
+    width: 100%; /*esto hace que pille el 100% de espacio para ingresar datos*/
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
 
 .footer {
     text-align: center;
