@@ -7,6 +7,14 @@
     --grisClaro: #DFE9F3;
 }
 
+.titulo span {
+    font-size: 2rem;
+}
+
+.titulo{
+    text-align: center  ;
+}
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -54,18 +62,19 @@ body {
 }
 
 .contenedor {
+    text-align: center;
     max-width: 120rem;
     margin: 0 auto;/* esto establece automaticamente un margen horizonteal a derecha e izquierda*/
 }
 
-@media (min-width: 768px) {
+
     .contenedor-campos {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto 2rem ;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto 4rem ;
         column-gap: 1rem;
     }/*esto nos va colocar las columnas y lineas*/
-}
+
 
 .hero {
     background-image: url(../img/hero.jpg);
@@ -149,7 +158,7 @@ body {
     .contenedor-campos {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto 50rem ;/*alto de la caja gris*/
+        grid-template-rows: auto auto 4rem ;/*alto de la caja gris*/
     } 
 }
 
@@ -163,11 +172,8 @@ body {
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
-}/*coloca y da estilo a los label que son los titulos en plan: empresa, tipologia, html . . .*/
-
-.campo form{
     
-}
+}/*coloca y da estilo a los label que son los titulos en plan: empresa, tipologia, html . . .*/
 
 .input-text {
     width: 100%; /*esto hace que pille el 100% de espacio para ingresar datos*/
@@ -179,3 +185,45 @@ body {
 .footer {
     text-align: center;
 }
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: right;
+    width: 75%;
+    margin-top: 6px;
+}
+
+@media (min-width: 768px) {
+    .col-25{
+      width: 50%;
+      margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-75{
+      width: 50%;
+      margin-top: 0;
+    }
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.row::before {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom:5rem;
+  }
+
+
+
+  
